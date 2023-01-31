@@ -1,10 +1,14 @@
+
+
 <!DOCTYPE html>
 
 <html lang="en">
 
 <head>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+   
 
     <meta charset="UTF-8">
 
@@ -20,25 +24,53 @@
 
 <body>
 
-    <div class="container">
-
+    <div class="container">  
         <div class="box">
+            <h1 class="joke1">😂Best Jokes to make your day😂</h1>
+            <div id="limit" class="limit" document.getElementById(count)  ></div>
 
-            <h3>😂Best Jokes to make your day😂</h3>
+            <div align="center" id="joke1" class="joke">Displaying hilarious jokes</div>
 
-            <div id="joke1" class="joke">Loading funny jokes...</div>
+            <div align="center" id="joke2" class="joke"></div>  
 
-            <div id="joke2" class="joke"></div>
 
         </div>
 
-        <label>count</label> <input id="txtcount"type="text"></input>
+        <div class="row mt-1">
 
-        <button class="btn" id="btncount">ok</button>
+            <div class="col-md-3 offset-md-3">
 
-        <button class="btn" id="btn">Next Joke</button>
+                <div class="form-group" align="center">
 
-    </div> 
+                <br>
+        
+                
+                <input  class="txtcount" placeholder="Enter Count of the Jokes" type= "number" id= "txtcount"  max="50" onkeypress="'if (this.value.length > 1 ) return false;'" />
+
+                <button class="btn" type="submit" value="submit" id="btncount" >Submit</button><br>
+
+                <button class="btn1" type="submit" value= "Next😁Joke" id= "btn" >Click😁Jokes</button><br>
+
+                <button class="btn2" type="submit" id="clr" onClick="window.location.href=window.location.href" >Restart
+                
+                    <span class="tooltiptext"> Restarts the page</span>
+                </button>
+               
+
+            </div>
+
+        </div>  
+    </div>
+
+    <script>
+
+        function locationreload() {
+
+            location.reload();
+
+        }
+
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
