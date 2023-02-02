@@ -72,13 +72,20 @@ $(document).ready(function () {
   temp.innerHTML = "<h4 style='dispaly:flex;margin-right:-685px;font-size: 19px;margin-top: -181px;'>" + 'Your Joke Count : ' + userinput + "</h4>"
     
     
-    if (userinput > 0) {
-      document.getElementById('btncount').style.display = "none";
-      document.getElementById('txtcount').style.display = "none";
-    }
-    console.log(count);
+  if (userinput > 0) {
+    console.log(userinput);
     getJoke();
-  });
+    document.getElementById('btncount').style.display = "none";
+    document.getElementById('txtcount').style.display = "none";
+  }
+  else{
+     alert("enter value");
+     document.getElementById('btn').style.display = "none";
+     document.getElementById('clr').style.display = "none";
+  }
+  console.log(count);
+ 
+});
 
   $('#btn').click(function () {
 
