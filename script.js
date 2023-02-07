@@ -1,5 +1,3 @@
-
-
 const temp = document.getElementById("limit");
 
 $(document).ready(function () {
@@ -69,17 +67,17 @@ $(document).ready(function () {
   $('#btncount').click(function () {
     userinput = $('#txtcount').val();
 
-  temp.innerHTML = "<h4 style='dispaly:flex;margin-right:-685px;font-size: 19px;margin-top: -181px;'>" + 'Your Joke Count : ' + userinput + "</h4>"
     
     
-  if (userinput > 0) {
+    if (userinput > 0) {
+    temp.innerHTML = "<h4 style='dispaly:flex;margin-right:-710px;font-size: 19px;margin-top: -181px;'>" + 'Your Joke Count : ' + userinput + "</h4>"
     console.log(userinput);
     getJoke();
     document.getElementById('btncount').style.display = "none";
     document.getElementById('txtcount').style.display = "none";
   }
   else{
-     alert("enter value");
+     alert("Please enter valid value starting from 1");
      document.getElementById('btn').style.display = "none";
      document.getElementById('clr').style.display = "none";
   }
@@ -92,4 +90,3 @@ $(document).ready(function () {
     getJoke();
   });
 });
-
