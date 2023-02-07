@@ -1,33 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100&family=Raleway:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100;300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,700&display=swap');
-
 * {
-
     font-family: 'Poppins', sans-serif;
     margin: 0%;
-    padding: 0%
+    padding: 0%;
 } 
 
-
 .container {
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     flex-direction: column;
-
     height: 100vh;
-   
-    /* background: rgba(74, 161, 74, 0.6); */
-
-    /*background-image: url("istockphoto-1207567390-170667a.jpg");*/
     background-image: url("360_F_286182066_yY72dajL2Vv9pYZ0LWiDiYZrMEStz0Fo.jpg");
     background-repeat:no-repeat;
     background-size: 100% 100%;
-
+    overflow-y: hidden;
 }
 
 .limit{
@@ -39,31 +27,26 @@
     width: 25px;
     margin-right:700px;
     margin-top:-7px;
-    margin-bottom:32px
-    font-size: 19px;
+    margin-bottom:32px;
+    font-size:19px;
 }
 
-
 .box {
-
     background-color: #FFFFE0;
     border-radius: 18px;
     box-shadow: rgb(140 140 242 / 20%) 0px 7px 29px 0px;
     text-align: center;
     margin-top: 9px;
-    width: 750px;
-    height: 350px;
+    width:750px;
+    height:350px;
     padding: 12px;
     border: 2px solid black;
-    /* border-style: dashed; */
     border-width: 1px;
     box-shadow: 4px 6px 60px -14px;
 } 
 
 h3 {
-
     font-size: 30px;
-
 }
 
 input{
@@ -74,57 +57,42 @@ input{
     font: bold;
     padding-right: 5px;
 }
+
 input::placeholder{
     font-size: 15px;
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 .joke1{
     margin-top: 65px;
 }
 
 .btn1 {
-
     width: 125px;
-
     height: 60px;
-
     color: rgb(4, 4, 8);
-
     background-color: rgb(58, 183, 245);
-
     margin-top: 23px;
-
     font-size: 15px;
-
     font-weight: 600;
-
     border-radius: 13px;
-
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-
     cursor: pointer;
-
     transition: all 0.5s ease;
-
     margin: 6px 0px -23px -34px;
-
 }
+
 #bt
-
 .btn1:active{
-   
-
     background-color: rgb(221, 32, 142);
-    
     }
 
-
 .btn {
-
     width: 84px;
     height: 40px;
     background-color: rgb(58, 183, 245);
@@ -136,55 +104,33 @@ input::-webkit-inner-spin-button {
     box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px, rgb(27 31 35 / 15%) 0px 0px 0px 1px;
     cursor: pointer;
     transition: all 0.5s ease;
-    
     }
 
-
 .btn2 {
-
     width: 125px;
-
     height: 60px;
-
     background-color: rgb(58, 183, 245);
-
     color: rgb(4, 4, 8);
-
     margin-top: 23px;
-
     font-size: 15px;
-
     font-weight: 600;
-
     border-radius: 13px;
-
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-
     cursor: pointer;
-
     transition: all 0.5s ease;
-
     position: relative;
-
     display: inline-block;
-
     margin: 10px 0px 0px -36px;
-
-    /* border-bottom: 1px dotted black; */
-
 }
+
 button:hover{
     background-color: rgb(221, 32, 142);
     color:aliceblue;
 }
 
-
 .btn2:active{
-   
-
     background-color: rgb(221, 32, 142);
-    
-    }
+}
 
 .btn2 .tooltiptext {
     visibility: hidden;
@@ -210,64 +156,40 @@ button:hover{
     border-style: solid;
     border-color: transparent black transparent transparent;
   }
+
   .btn2:hover .tooltiptext {
     visibility: visible;
   }
 
-
-
 .joke {
-
     font-size: 20px;
-
     line-height: 1.5rem;
-
     padding: 3px 5px 35px 5px;
-
     font-weight: 500;
-
     text-align : center;
-
 }
 
 @media only screen and (max-width:400px) {
-
     .box {
-
         width: 350px;
-
         max-height: 500px;
-
-        
-
     } 
 
     h5 {
-
         font-size: 50px;
-
     }
-
 }
 
 @media only screen and (max-width:355px) {
-
     .box {
-
         width: 350px;
-
     }
 
     h1 {
-
         font-size: 22px;
-
     }
 
     .joke {
-
         font-size: 300px;
-
     }
-
 }
